@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklucasogoncalves=self.webpackChunklucasogoncalves||[]).push([[27],{27:(e,s,a)=>{e.exports=a.p+"static/media/about.160e7ce848c67b4a1fe2.md"}}]);
