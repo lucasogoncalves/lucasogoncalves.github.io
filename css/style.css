@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -20,12 +20,20 @@ body {
 }
 
 .logo-circular {
-  width: 120px;         /* Reduz o tamanho da logo */
-  height: 120px;        /* Deixe igual à largura para formar o círculo */
+  width: 40px;         /* Reduz o tamanho da logo */
+  height: 40px;        /* Deixe igual à largura para formar o círculo */
   object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
   border-radius: 50%;  /* Torna o formato circular */
   border: 5px solid #012223; /* (opcional) Borda cinza escuro */
-  margin-bottom: -80px; /* Espaço abaixo da logo */
+  
+}
+
+.perfil_home {
+  width: 400px;         /* Reduz o tamanho da logo */
+  height: 400px;        /* Deixe igual à largura para formar o círculo */
+  object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
+  border-radius: 10%;  /* Torna o formato circular */
+  margin-top: -30px; /* Espaço abaixo da logo */
 }
 
 #page {
@@ -72,7 +80,7 @@ p {
 }
 
 h1, 
-, h3, h4, h5, h6, figure {
+  h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
@@ -168,7 +176,6 @@ h1,
 }
 .gtco-nav ul li.has-dropdown > a:after {
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -253,7 +260,7 @@ h1,
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -299,15 +306,30 @@ h1,
   position: relative;
 }
 
-.gtco-cover {
-  height: 900px;
+#gtco-header.gtco-cover::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* <-- Aqui você controla a opacidade */
+  z-index: 1;
+}
+
+
+#gtco-header.gtco-cover {
+  background-image: url('../images/fundo.jpg') !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh;
   position: relative;
-  float: left;
-  width: 100%;
 }
+
+
 .gtco-cover.gtco-inner h1 {
   margin-bottom: 0 !important;
 }
@@ -329,6 +351,7 @@ h1,
 .gtco-cover > .gtco-container {
   position: relative;
   z-index: 10;
+
 }
 @media screen and (max-width: 768px) {
   .gtco-cover {
@@ -408,7 +431,7 @@ h1,
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .gtco-services {
@@ -722,7 +745,7 @@ h1,
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .gtco-staff .fh5co-social li a, .gtco-item .fh5co-social li a {
   font-size: 20px;
@@ -743,13 +766,13 @@ h1,
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .gtco-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #17B794;
   padding-left: 10px;
   padding-right: 10px;
@@ -780,7 +803,6 @@ h1,
   left: 0;
   top: .05em;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -877,28 +899,32 @@ form label {
   margin: 0;
   padding: 0;
   color: white;
+   line-height: 1;
 }
 #gtco-header .display-tc h1,
 #gtco-counter .display-tc h1,
 .gtco-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 59px;
-  line-height: 1.5;
+  font-size: 40px;
+  line-height: 1;
 }
 @media screen and (max-width: 768px) {
   #gtco-header .display-tc h1,
   #gtco-counter .display-tc h1,
   .gtco-cover .display-tc h1 {
     font-size: 34px;
-    line-height: 1.2;
+    line-height: 0;
     margin-bottom: 10px;
   }
+
+
+  
 }
 #gtco-header .display-tc h2,
 #gtco-counter .display-tc h2,
 .gtco-cover .display-tc h2 {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 0;
   margin-bottom: 30px;
 }
 
@@ -1037,7 +1063,6 @@ form label {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1113,7 +1138,7 @@ form label {
   text-decoration: none;
 }
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
-  background: #444;
+  background: #70b0b8;
 }
 .gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
   outline: none;
@@ -1128,14 +1153,14 @@ form label {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #70b0b8;
   transition: all .2s ease-out;
 }
 .gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #70b0b8;
   position: absolute;
   left: 0;
   transition: all .2s ease-out;
