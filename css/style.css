@@ -21,9 +21,8 @@ body {
 
 .logo-circular {
   width: 40px;         /* Reduz o tamanho da logo */
-  height: 40px;        /* Deixe igual à largura para formar o círculo */
-  object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
-  border-radius: 50%;  /* Torna o formato circular */
+  height:40px;        /* Deixe igual à largura para formar o círculo */
+  object-fit: adjust;   /* Garante que a imagem preencha bem o espaço */
   border: 5px solid #012223; /* (opcional) Borda cinza escuro */
   
 }
@@ -32,7 +31,6 @@ body {
   width: 400px;         /* Reduz o tamanho da logo */
   height: 400px;        /* Deixe igual à largura para formar o círculo */
   object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
-  border-radius: 10%;  /* Torna o formato circular */
   margin-top: -30px; /* Espaço abaixo da logo */
 }
 
@@ -63,8 +61,14 @@ body {
   content: "";
 }
 
+.gtco-contact-info li i {
+  margin-right: 10px;
+  color: #27b49c; /* ou a cor da sua identidade visual */
+}
+
+
 a {
-  color: #17B794;
+  color: #168269;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -81,8 +85,8 @@ p {
 
 h1, 
   h3, h4, h5, h6, figure {
-  color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  /* color: #000; */
+  font-family: "Ralewa", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -206,10 +210,6 @@ h1,
   text-align: left;
   background: #fff;
   padding: 20px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
@@ -264,10 +264,7 @@ h1,
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
+
 }
 .gtco-nav ul li.btn-cta a:hover span {
   -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
@@ -325,7 +322,7 @@ h1,
   background-attachment: scroll;
   margin: 0 !important;
   padding: 0 !important;
-  height: 100vh;
+  height: 800px;
   position: relative;
 }
 
@@ -347,6 +344,7 @@ h1,
   left: 0;
   right: 0;
   background: rgba(29, 43, 83, 0.89);
+
 }
 .gtco-cover > .gtco-container {
   position: relative;
@@ -436,6 +434,7 @@ h1,
 
 .gtco-services {
   padding: 7em 0;
+  margin-bottom: 100px !important;
 }
 .gtco-services .service {
   margin-left: 10px;
@@ -504,7 +503,11 @@ h1,
 }
 .gtco-products .gtco-item {
   position: relative;
+  display: block;
+  background-image: cover;
+  height: 280px; /* mesma altura da imagem ou do grid */
 }
+
 .gtco-products .gtco-item .overlay {
   position: absolute;
   top: 0;
@@ -517,18 +520,23 @@ h1,
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  width: 100%;   /* Faz ocupar toda a largura do pai */
+  height: 100%;  /* Faz ocupar toda a altura do pai */
 }
 .gtco-products .gtco-item .overlay i {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 5px;
+  right: 0;
   font-size: 16px;
   z-index: 14;
   color: #fff;
+  width: 100%;
+  height: 100%
 }
 .gtco-products .gtco-item .overlay .copy {
-  bottom: -20px;
-  position: absolute;
+  bottom: 0;
+  position: relative;
   left: 0;
   padding: 20px;
   z-index: 12;
@@ -560,7 +568,7 @@ h1,
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .8;
+  opacity: 1;
   background: #3dcdbc;
   background: -moz-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #3dcdbc), color-stop(100%, #33a1bd));
@@ -590,13 +598,7 @@ h1,
   float: left;
   width: 80px;
 }
-.gtco-testimonial .gtco-left > div img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  max-width: 100% !important;
-}
+
 .gtco-testimonial .gtco-left > blockquote {
   padding-left: 20px;
   display: table-cell;
@@ -679,10 +681,9 @@ h1,
 }
 #gtco-footer .gtco-footer-subscribe .btn {
   margin-top: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+
+
+
   height: 54px !important;
   line-height: 1.5;
   padding-top: 10px;
@@ -878,8 +879,13 @@ form label {
   margin-top: 0em;
 }
 #gtco-header .btn {
-  color: #34a7bd !important;
+  color: #0f877b !important;
   text-shadow: none !important;
+}
+#gtco-header .btn:hover {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-shadow: none !important;
+  border-width: none !important;
 }
 #gtco-header .header-img {
   margin-bottom: 30px;
@@ -896,17 +902,17 @@ form label {
 #gtco-counter .display-tc h2,
 .gtco-cover .display-tc h1,
 .gtco-cover .display-tc h2 {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   color: white;
-   line-height: 1;
+  /* line-height: 1; */
 }
 #gtco-header .display-tc h1,
 #gtco-counter .display-tc h1,
 .gtco-cover .display-tc h1 {
-  margin-bottom: 0px;
-  font-size: 40px;
-  line-height: 1;
+  /* margin-bottom: 0px; */
+  /* font-size: 40px; */
+  /* line-height: 1; */
 }
 @media screen and (max-width: 768px) {
   #gtco-header .display-tc h1,
@@ -971,6 +977,7 @@ form label {
   padding: 7em 0;
   clear: both;
   position: relative;
+
 }
 @media screen and (max-width: 768px) {
   .gtco-section {
@@ -995,7 +1002,8 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   color: #4d4d4d;
-  font-weight: 300;
+  font-weight: 400;
+  center: center;
 }
 .gtco-heading p {
   font-size: 18px;
@@ -1116,10 +1124,7 @@ form label {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  
 }
 .gototop a i {
   height: 50px;
@@ -1237,10 +1242,7 @@ form label {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700 !important;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border-radius: 0px;
+
   letter-spacing: 2px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1260,9 +1262,9 @@ form label {
 }
 
 .btn-primary {
-  background: #17B794;
+  background: #2b806d;
   color: #fff;
-  border: 2px solid #17B794 !important;
+
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #1acea6 !important;
@@ -1355,29 +1357,27 @@ form label {
 }
 
 .btn-white {
+  color: #ffffff;
   background: #fff;
-  color: #000;
-  border: 2px solid #fff;
+  
+  
 }
 .btn-white:hover, .btn-white:focus, .btn-white:active {
-  color: #000;
-  background: #fff;
-  border-color: #fff;
+  color: #fff !important;
+  background: #0f877b;
+ 
 }
-.btn-white.btn-outline {
-  color: #fff;
-  border: 2px solid #fff;
-}
+
 .btn-white.btn-outline:hover, .btn-white.btn-outline:focus, .btn-white.btn-outline:active {
   background: #fff;
   color: #000 !important;
-  border: 2px solid #fff;
+  
 }
 
 .btn-special {
-  background: #00ffa3;
-  color: #239c71;
-  border: 2px solid #00ffa3;
+  background: #32a38a;
+  color: #fff;
+
 }
 .btn-special:hover, .btn-special:focus, .btn-special:active {
   color: #239c71;
@@ -1448,11 +1448,11 @@ form label {
 }
 
 .row-pb-md {
-  padding-bottom: 4em !important;
+  padding-bottom: 0px !important;
 }
 
 .row-pb-sm {
-  padding-bottom: 2em !important;
+  object-position: center !important;
 }
 
 .gtco-loader {
@@ -1536,10 +1536,7 @@ form label {
   position: relative;
   background: #15a989;
   top: -3em;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+
 }
 #gtco-features-3 .feature .icon i {
   line-height: 90px;

@@ -1,0 +1,220 @@
+
+/* =======================
+   Bootstrap Lite (custom)
+   Apenas Grid, Tipografia, Botões e Utilitários Essenciais
+======================= */
+
+/* Reset básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 16px; */
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: #b6c1bf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Grid simplificado */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-sm-2  { width: 16.666667%; }
+.col-sm-4  { width: 33.333333%; }
+.col-sm-6  { width: 50%; }
+.col-sm-8  { width: 66.666667%; }
+.col-sm-10 { width: 83.333333%; }
+.col-sm-12 { width: 100%; }
+
+.col-md-2  { width: 16.666667%; }
+.col-md-4  { width: 33.333333%; }
+.col-md-5  { width: 41.666667%; }
+.col-md-6  { width: 50%; }
+.col-md-7  { width: 58.333333%; }
+.col-md-8  {CONTAIN-INTRINSIC-BLOCK-SIZE: AUTO 100PX;width: 100%;}
+.col-md-10 { width: 83.333333%; }
+.col-md-12 { width: 100%; }
+
+@media (max-width: 768px) {
+  .col-sm-2, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-10, .col-sm-12,
+  .col-md-2, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10, .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.btn-white {
+  background: #fff;
+  color: #333;
+ 
+}
+
+.btn-white:hover {
+  color: #333;
+  background: #0f877b;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Formulário básico */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilitários */
+.text-center {
+  text-align: center;
+}
+
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* === Correção: Centralização e margens dos títulos de seção === */
+section h2,
+.gtco-heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.gtco-heading p {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* === Correção: Grid responsivo com espaçamento entre colunas === */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: left !important;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+/* Exemplo para três colunas */
+.col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* === Correção: Imagens fluidas === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background-image: cover  
+}
+
+/* === Correção: Alinhamento dos blocos com hover (cards de projetos) === */
+.project-hover-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-hover-block .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+
+.project-hover-block:hover .overlay {
+  opacity: 1;
+}

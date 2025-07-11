@@ -15,19 +15,15 @@
 	<meta name="author" content="Lucas O Goncalves" />
 
 	<meta property="og:title" content="Lucas O Goncalves - Designer Digital"/>
-	<meta property="og:image" content="images/me.jpg"/>
+	<meta property="og:image" content="images/image.png"/>
 	<meta property="og:url" content="http://lucasogoncalves.com"/>
 	<meta property="og:description" content="Portfólio de soluções visuais criativas com foco em resultados."/>
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/animate.css">
-
 	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-
-
-
+	<link rel="stylesheet" href="css/bootstrap-lite.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
@@ -39,25 +35,16 @@
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="index.html"><img src="images/me.jpg" alt="Logo" class="logo-circular"></a></div>
+						<div id="gtco-logo"><a href="index.html"><img src="images/image.png" alt="Logo" class="logo-circular"></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Início</a></li>
-							<li><a href="about.html">Sobre</a></li>
-							<li class="has-dropdown">
-								<a href="services.html">Serviços</a>
-								<ul class="dropdown">
-									<li><a href="#">Branding & Identidade</a></li>
-									<li><a href="#">UX/UI Design</a></li>
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">SEO & Performance</a></li>
-								</ul>
+							<li><a href="#sobre">Sobre</a></li>
+							<li class="active"><a href="#portfolio">Portfolio</a></li>
+								<!--<a href="https://www.behance.net/lucas-o-goncalves" target="_blank">PORTFÓLIO</a> redirecionamento behance -->
 							</li>
-							<li class="active">
-								<a href="https://www.behance.net/lucas-o-goncalves" target="_blank">PORTFÓLIO</a>
-							</li>
-							<li><a href="contact.html">Contato</a></li>
+							<li><a href="#contato">Contato</a></li>
 						</ul>
 					</div>
 				</div>
@@ -90,7 +77,7 @@
 
 		<div class="gtco-services gtco-section">
 			<div class="gtco-container">
-				<div class="row row-pb-sm">
+				<div class="row-pb-sm">
 					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
 						<h2>Transformo ideias em resultados</h2>
 						<p>Unindo criatividade, estratégia e técnica para gerar impacto real na presença digital de marcas e negócios.</p>
@@ -111,8 +98,8 @@
 					</div>
 					<div class="col-md-4 col-sm-4 service-wrap">
 						<div class="service">
-							<h3><i class="ti-bar-chart"></i> SEO & Performance</h3>
-							<p>Otimização técnica e estratégica para que seu site ganhe relevância e posição no Google.</p>
+							<h3><i class="ti-star"></i> Design Gráfico</h3>
+							<p>Criativos sob demanda para produtos impressos e personalizados.</p>
 						</div>
 					</div>
 				</div>
@@ -121,7 +108,7 @@
 		<!-- END .gtco-client -->
 
 
-		<div class="gtco-section gtco-products">
+		<div id="portfolio" class="gtco-section gtco-products gtco-gray">
 			<div class="gtco-container">
 				<div class="row row-pb-sm">
 					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
@@ -131,82 +118,136 @@
 				</div>
 				<div class="row row-pb-md">
 					<div class="col-md-4 col-sm-4">
-						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/img_1.jpg)">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/galindo-cavalcanti-advocacia.jpg)">
 							<div class="overlay">
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
-									<h3>Identidade Visual para Marca Local</h3>
-									<p>Criação completa de branding e aplicações digitais para pequeno negócio.</p>
+									<h3>Identidade Visual</h3>
+									<p>Criação completa de branding para Escritório de advocacia</p>
 								</div>
 							</div>
-							<img src="images/img_1.jpg" class="hidden" alt="Identidade Visual">
+							
 						</a>
-						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/img_2.jpg)">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/gvclear.jpg)">
 							<div class="overlay">
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
-									<h3>Website Responsivo</h3>
-									<p>Site institucional com design moderno, UX fluída e performance otimizada.</p>
+									<h3>Branding Corporativo</h3>
+									<p>Adaptar identidade visual para contextos de mídia impressa.</p>
 								</div>
 							</div>
-							<img src="images/img_2.jpg" class="hidden" alt="Website Responsivo">
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<a href="#" class="gtco-item one-row bg-img animate-box" style="background-image: url(images/img_md_1.jpg)">
-							<div class="overlay">
-								<i class="ti-arrow-top-right"></i>
-								<div class="copy">
-									<h3>Dashboard UI</h3>
-									<p>Interface intuitiva para sistema web com foco em dados e usabilidade.</p>
-								</div>
-							</div>
-							<img src="images/img_md_1.jpg" class="hidden" alt="Dashboard UI">
+						
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-4">
-						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/img_3.jpg)">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/surf-print-ecommerce.jpg)">
 							<div class="overlay">
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
-									<h3>Campanha Digital</h3>
-									<p>Peças de mídia e landing page para campanha com foco em conversão.</p>
+									<h3>E-Commerce Responsivo</h3>
+									<p>Desenvolvimento de loja on-line de produtos de surf no wordpres.</p>
 								</div>
 							</div>
-							<img src="images/img_3.jpg" class="hidden" alt="Campanha Digital">
+							
 						</a>
-						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/img_4.jpg)">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/manga-music-studio.jpg)">
 							<div class="overlay">
 								<i class="ti-arrow-top-right"></i>
 								<div class="copy">
-									<h3>Manual de Marca</h3>
-									<p>Documentação visual para uso consistente da identidade da marca.</p>
+									<h3>Branding</h3>
+									<p>Criação e desenvolvimento para estúdio independente.</p>
 								</div>
 							</div>
-							<img src="images/img_4.jpg" class="hidden" alt="Manual de Marca">
+							
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/gpprint.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>Catálogo Industrial</h3>
+									<p>catálogo de maquinário para industria gráfica.</p>
+								</div>
+							</div>
+							
+						</a>
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(portfolio/solo-solar.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>Cartão de Visita</h3>
+									<p>design personalizado para representação de vendas.</p>
+								</div>
+							</div>
+
 						</a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<p><a href="https://www.behance.net/lucas-o-goncalves" target="_blank" class="btn btn-special">Ver mais projetos</a></p>
+						<p><a href="https://www.behance.net/lucas-o-goncalves" target="_blank" class="btn btn-special">Portfolio Completo</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- END .gtco-products -->
+		<!-- END previa portfolio -->
+	
+<div class="gtco-section">
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+        <h2>Fala Comigo!</h2>
+        <p>Entre em contato e bora conversar.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Formulário -->
+      <div class="col-md-6">
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-special" value="Enviar Email">
+          </div>
+        </form>
+      </div>
+
+      <!-- Links de contato -->
+      <div class="col-md-5 col-md-push-1">
+        <div class="gtco-contact-info">
+          <ul>
+            <li><i class="ti-email"></i> <a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+            <li><i class="ti-world"></i> <a href="https://www.yoursite.com" target="_blank">www.yoursite.com</a></li>
+            <li><i class="ti-instagram"></i> <a href="https://www.instagram.com/seuusuario" target="_blank">@seuusuario</a></li>
+            <li><i class="ti-linkedin"></i> <a href="https://www.linkedin.com/in/seuusuario" target="_blank">linkedin.com/in/seuusuario</a></li>
+            <li><i class="ti-github"></i> <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></li>
+            <li> <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-special" style="margin-top: 10px;">Falar no WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+		<!-- END Contato -->
 
 		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
 			<div class="gtco-container">
-				<div class="row row-pb-md">
-					<div class="col-md-8 col-md-offset-2 gtco-cta text-center">
-						<h3>Vamos conversar sobre sua marca?</h3>
-						<p><a href="contact.html" class="btn btn-white btn-outline">Entrar em contato</a></p>
-					</div>
-				</div>
+
 				<div class="row row-pb-md">
 					<div class="col-md-4 gtco-widget gtco-footer-paragraph">
 						<h3>Lucas O Goncalves</h3>
@@ -220,14 +261,11 @@
 									<li><a href="services.html">Serviços</a></li>
 									<li><a href="https://www.behance.net/lucas-o-goncalves" target="_blank">Portfólio</a></li>
 									<li><a href="about.html">Sobre</a></li>
-									<li><a href="contact.html">Contato</a></li>
+
 								</ul>
 							</div>
 							<div class="col-md-6">
-								<p>
-									<a href="tel://+5511999999999">+55 11 99999-9999</a> <br>
-									<a href="mailto:lucasdesign@email.com">lucasdesign@email.com</a>
-								</p>
+								
 							</div>
 						</div>
 					</div>
