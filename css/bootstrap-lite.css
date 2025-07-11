@@ -73,7 +73,7 @@ a:hover {
 
 /* Tipografia */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: lighter;
   margin-bottom: 15px;
 }
 
@@ -92,26 +92,8 @@ p {
   text-align: center;
 }
 
-.btn-white {
-  background: #fff;
-  color: #333;
- 
-}
 
-.btn-white:hover {
-  color: #333;
-  background: #0f877b;
-}
 
-.btn-outline {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 /* Formulário básico */
 input[type="email"], input[type="text"], input[type="password"], textarea {
@@ -200,8 +182,8 @@ img {
 
 /* === Correção: Alinhamento dos blocos com hover (cards de projetos) === */
 .project-hover-block {
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  overflow: visible;
 }
 
 .project-hover-block .overlay {

@@ -19,6 +19,16 @@ body {
   background: #fff;
 }
 
+/* Sticky Header */
+.sticky-header {
+  position: sticky !important;
+  top: 0;
+  z-index: 500;
+  background: white; /* ou sua cor de fundo desejada */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra opcional */
+}
+
+
 .logo-circular {
   width: 40px;         /* Reduz o tamanho da logo */
   height:40px;        /* Deixe igual à largura para formar o círculo */
@@ -36,7 +46,7 @@ body {
 
 #page {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: visible;
   width: 100%;
   height: 100%;
   -webkit-transition: 0.5s;
@@ -793,8 +803,8 @@ h1,
   margin: 0;
 }
 .gtco-contact-info ul li {
-  padding: 0 0 0 50px;
-  margin: 0 0 30px 0;
+  padding: 0 0 0 0;
+  margin: 20px 20px 0 0;
   list-style: none;
   position: relative;
 }
@@ -865,7 +875,7 @@ form label {
   line-height: 1.2 !important;
   margin-bottom: 30px !important;
   color: #d3f1ed;
-  font-weight: 100;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   #gtco-header h1 {
@@ -1021,7 +1031,7 @@ form label {
   top: 0;
   bottom: 0;
   padding: 45px 40px 40px 40px;
-  overflow-y: auto;
+  overflow-y: visible;
   display: none;
   -moz-transform: translateX(270px);
   -webkit-transform: translateX(270px);
@@ -1150,7 +1160,7 @@ form label {
   border-bottom: none !important;
 }
 .gtco-nav-toggle i {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 25px;
   height: 2px;
