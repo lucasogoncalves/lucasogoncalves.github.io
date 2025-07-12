@@ -34,16 +34,23 @@ body {
 .logo-circular {
   width: 40px;         /* Reduz o tamanho da logo */
   height:40px;        /* Deixe igual à largura para formar o círculo */
-  object-fit: adjust;   /* Garante que a imagem preencha bem o espaço */
+  object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
   border: 5px solid #012223; /* (opcional) Borda cinza escuro */
   
 }
 
 .perfil_home {
-  width: 400px;         /* Reduz o tamanho da logo */
-  height: 400px;        /* Deixe igual à largura para formar o círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  width: 100%;
+           /* Reduz o tamanho da logo */
+  height: auto;        /* Deixe igual à largura para formar o círculo */
   object-fit: cover;   /* Garante que a imagem preencha bem o espaço */
-  margin-top: -30px; /* Espaço abaixo da logo */
+  margin: -30px 10 0 10; 
+  padding: 0px !important;
+
 }
 
 #page {
@@ -121,6 +128,7 @@ h1,
 }
 
 .gtco-container {
+  
   max-width: 1140px;
   position: relative;
   margin: 0 auto;
@@ -136,6 +144,7 @@ h1,
   z-index: 9999;
   background: #012223;
   width: 100%;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -331,7 +340,7 @@ h1,
 
 
 #gtco-header.gtco-cover {
-  background-image: url('../images/fundo.jpg') !important;
+  background-image: url('../images/fundo.webp') !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -799,7 +808,8 @@ h1,
 }
 
 .gtco-contact-info {
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   float: left;
   width: 100%;
   position: relative;
@@ -872,7 +882,7 @@ form label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
 }
 #gtco-header p {
-  color: #d3f1ed;
+  color: #a5bab7;
   font-size: 20px;
   margin-bottom: 40px !important;
 }
@@ -892,7 +902,7 @@ form label {
   margin-bottom: 0 !important;
 }
 #gtco-header .copy {
-  margin-top: 0em;
+  margin-top: 100px;
 }
 #gtco-header .btn {
   color: #0f877b !important;
@@ -945,6 +955,7 @@ form label {
 #gtco-header .display-tc h2,
 #gtco-counter .display-tc h2,
 .gtco-cover .display-tc h2 {
+  color: #1cdab0; 
   font-size: 22px;
   line-height: 0;
   margin-bottom: 30px;

@@ -22,11 +22,6 @@
 
 	};
 
-
-
-
-
-
 	var offcanvasMenu = function() {
 
 		$('#page').prepend('<div id="gtco-offcanvas" />');
@@ -40,7 +35,13 @@
 		$('#gtco-offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
-
+		
+	    // 🔁 FECHA O MENU AO CLICAR EM UM LINK
+	    $('#gtco-offcanvas a').on('click', function () {
+		    $('body').removeClass('offcanvas overflow');
+		    $('.js-gtco-nav-toggle').removeClass('active');
+	    });
+		
 		// Hover dropdown menu on mobile
 		$('.offcanvas-has-dropdown').mouseenter(function(){
 			var $this = $(this);
