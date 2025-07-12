@@ -31,26 +31,36 @@
 	<div class="gtco-loader"></div>
 	<div id="page">
 
-		<nav class="gtco-nav sticky-header" role="navigation">
+<nav class="gtco-nav sticky-header" role="navigation">
+  <div class="gtco-container">
+    <div class="row">
 
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="index.html"><img src="images/image.png" alt="Logo" class="logo-circular"></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li ><a href="#gtco-header">Início</a></li>
-							
-							<li ><a href="#portfolio">Portfolio</a></li>
-								<!--<a href="https://www.behance.net/lucas-o-goncalves" target="_blank">PORTFÓLIO</a> redirecionamento behance -->
-							</li>
-							<li><a href="#contato">Contato</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+      <div class="col-xs-6 col-sm-2">
+      <!-- HAMBURGUER APARECE NO MOBILE -->
+        <div class="col-xs-6 text-right visible-xs">
+        <a href="#" class="js-gtco-nav-toggle gtco-nav-toggle"><i></i></a>
+        </div>
+        <div id="gtco-logo">
+          <a href="index.html">
+            <img src="images/image.png" alt="Logo" class="logo-circular">
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- MENU NORMAL (SOME NO MOBILE) -->
+      <div class="col-sm-10 text-right menu-1 hidden-xs">
+        <ul>
+          <li><a href="#gtco-header">Início</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
 		<header id="gtco-header" class="gtco-cover" role="banner">
 			<div class="gtco-container">
@@ -207,30 +217,33 @@
     <div class="row">
       <!-- Formulário -->
       <div class="col-md-6">
-        <form action="#">
-          <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="message">Mensagem</label>
-            <textarea id="message" cols="30" rows="10" class="form-control"></textarea>
-          </div>
-          <div class="form-group">
-            <input type="submit" class="btn btn-special" value="Enviar Email">
-          </div>
-        </form>
+		<form action="https://formsubmit.co/lucasogoncalves@gmail.com" method="POST">
+		  <div class="form-group">
+		    <label for="name">Nome</label>
+		    <input type="text" name="nome" class="form-control" id="name" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Email</label>
+		    <input type="email" name="email" class="form-control" id="email" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="message">Mensagem</label>
+		    <textarea name="mensagem" id="message" cols="30" rows="10" class="form-control" required></textarea>
+		  </div>
+				 
+		
+		  <div class="form-group">
+		    <input type="submit" class="btn btn-special" value="Enviar Email">
+		  </div>
+		</form>
+
       </div>
 
       <!-- Links de contato -->
       <div class="col-md-5 col-md-push-1">
         <div class="gtco-contact-info">
           <ul>
-            <li><i class="ti-email"></i> <a href="mailto:lucasogoncalves@gmail.com" target="_blank">lucasogoncalves@gmail.com</a></li>
+            <li><i class="ti-email"></i> <a href="mailto:lucasogoncalvesss@gmail.com" target="_blank">lucasogoncalvesss@gmail.com</a></li>
             <li><i class="ti-world"></i> <a href="https://lucasogoncalves.github.io" target="_blank">lucasogoncalves.github.io</a></li>
             <li><i class="ti-instagram"></i> <a href="https://www.instagram.com/lucasogoncalves" target="_blank">@lucasogoncalves</a></li>
             <li><i class="ti-linkedin"></i> <a href="https://www.linkedin.com/in/lucasogoncalves/" target="_blank">linkedin.com/in/lucasogoncalves</a></li>
@@ -240,7 +253,7 @@
 			
         </div>
 		<div>
-			 <ul> <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-special" style="margin-top: 10px;">Falar no WhatsApp</a></ul>
+			 <ul> <a href="https://wa.me/5581995227517?text=Olá%2C+Lucas%21+Vim+pelo+seu+site+e+gostaria+de+saber+mais+sobre+os+serviços." target="_blank" class="btn btn-special" style="margin-top: 10px;">Falar no WhatsApp</a></ul>
         </div>
 	  </div>
     </div>
