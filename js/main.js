@@ -197,6 +197,9 @@
 			margin: 40,
 			nav: true,
 			dots: true,
+			autoplay: true,           // Ativa o autoplay
+			autoplayTimeout: 1000,    // Troca a cada 1000 ms (1 segundo)
+			autoplaySpeed: 800,       // Velocidade da transição
 			navText: [
 		      "<i class='ti-arrow-left owl-direction'></i>",
 		      "<i class='ti-arrow-right owl-direction'></i>"
