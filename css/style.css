@@ -182,6 +182,14 @@ figure {
     /* centraliza verticalmente com o logo */
 }
 
+@media screen and (max-width: 768px) {
+  .gtco-nav .menu-1 ul,
+  .gtco-nav .menu-1 {
+    display: none !important;
+  }
+}
+
+
 .gtco-nav .menu-1 ul {
     display: flex;
     gap: 20px;
